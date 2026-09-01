@@ -1,0 +1,4 @@
+index=* EventCode=4625
+| bin _time span=1m
+| stats count by Account_Name, _time
+| where count >= 5
